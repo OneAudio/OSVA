@@ -1,0 +1,2705 @@
+EESchema Schematic File Version 4
+LIBS:AA2380V1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "AA2380 OSVA ADC board"
+Date ""
+Rev "1.0 "
+Comp "OnE Audio PRojects"
+Comment1 "Open Source Versatile Analyzer"
+Comment2 "Stand alone dual channels SAR ADCs board"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12VA #PWR0101
+U 1 1 5BCB53CB
+P 4675 1250
+F 0 "#PWR0101" H 4675 1100 50  0001 C CNN
+F 1 "+12VA" V 4690 1378 50  0000 L CNN
+F 2 "" H 4675 1250 50  0001 C CNN
+F 3 "" H 4675 1250 50  0001 C CNN
+	1    4675 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12VA #PWR0104
+U 1 1 5BCB5471
+P 4675 1450
+F 0 "#PWR0104" H 4675 1300 50  0001 C CNN
+F 1 "-12VA" V 4675 1700 50  0000 C CNN
+F 2 "" H 4675 1450 50  0001 C CNN
+F 3 "" H 4675 1450 50  0001 C CNN
+	1    4675 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BCB5776
+P 1575 1925
+F 0 "#PWR0106" H 1575 1675 50  0001 C CNN
+F 1 "GND" H 1575 1800 50  0000 C CNN
+F 2 "" H 1575 1925 50  0001 C CNN
+F 3 "" H 1575 1925 50  0001 C CNN
+	1    1575 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5BCB5964
+P 1825 1650
+F 0 "F1" V 1775 1475 50  0000 C CNN
+F 1 "500mA" V 1750 1650 30  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1875 1450 50  0001 L CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_nanosmd_catalog_datasheet.pdf.pdf" H 1825 1650 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "650-NANOC050F/13.2-2" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.297" H 0   0   50  0001 C CNN "Unit price"
+	1    1825 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5BCB5AB0
+P 3875 1650
+F 0 "TP16" H 3925 1775 50  0000 L CNN
+F 1 "TestPoint" H 3925 1700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4075 1650 50  0001 C CNN
+F 3 "~" H 4075 1650 50  0001 C CNN
+	1    3875 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D3
+U 1 1 5BCB5BEE
+P 5675 1625
+F 0 "D3" V 5721 1557 50  0000 R CNN
+F 1 "LED_Small_ALT" V 5500 2200 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 5675 1625 50  0001 C CNN
+F 3 "~" V 5675 1625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-150060GS75000" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.13" H 0   0   50  0001 C CNN "Unit price"
+	1    5675 1625
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5BCB9439
+P 9075 2875
+F 0 "#PWR0131" H 9075 2625 50  0001 C CNN
+F 1 "GND" H 9080 2702 50  0000 C CNN
+F 2 "" H 9075 2875 50  0001 C CNN
+F 3 "" H 9075 2875 50  0001 C CNN
+	1    9075 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5BCB9504
+P 10150 2075
+F 0 "TP20" H 10200 2275 50  0000 R CNN
+F 1 "TestPoint" H 10500 2025 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10350 2075 50  0001 C CNN
+F 3 "~" H 10350 2075 50  0001 C CNN
+	1    10150 2075
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5BCB985B
+P 8575 3075
+F 0 "#PWR0136" H 8575 2825 50  0001 C CNN
+F 1 "GND" H 8580 2902 50  0000 C CNN
+F 2 "" H 8575 3075 50  0001 C CNN
+F 3 "" H 8575 3075 50  0001 C CNN
+	1    8575 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5BCB9882
+P 8075 3075
+F 0 "#PWR0135" H 8075 2825 50  0001 C CNN
+F 1 "GND" H 8080 2902 50  0000 C CNN
+F 2 "" H 8075 3075 50  0001 C CNN
+F 3 "" H 8075 3075 50  0001 C CNN
+	1    8075 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5BCB9988
+P 9700 2375
+F 0 "#PWR0124" H 9700 2125 50  0001 C CNN
+F 1 "GND" H 9705 2202 50  0000 C CNN
+F 2 "" H 9700 2375 50  0001 C CNN
+F 3 "" H 9700 2375 50  0001 C CNN
+	1    9700 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9075 2775 9075 2875
+Wire Wire Line
+	8825 2175 8875 2175
+Wire Wire Line
+	8875 2175 8875 2075
+Wire Wire Line
+	8825 2075 8875 2075
+Connection ~ 8875 2075
+Wire Wire Line
+	8875 2075 9075 2075
+$Comp
+L Device:R R39
+U 1 1 5BCB9C8E
+P 9075 2225
+F 0 "R39" H 9145 2271 50  0000 L CNN
+F 1 "13k7" H 9145 2180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9005 2225 50  0001 C CNN
+F 3 "~" H 9075 2225 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-13.7K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.114" H 0   0   50  0001 C CNN "Unit price"
+	1    9075 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5BCB945A
+P 9075 2625
+F 0 "R42" H 9145 2671 50  0000 L CNN
+F 1 "11k" H 9145 2580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9005 2625 50  0001 C CNN
+F 3 "~" H 9075 2625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080511K0FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    9075 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9075 2475 9075 2375
+Wire Wire Line
+	8825 2375 9075 2375
+Connection ~ 9075 2375
+Wire Wire Line
+	9700 2375 9700 2275
+Wire Wire Line
+	7775 1525 7625 1525
+Wire Wire Line
+	7625 1525 7625 1325
+Wire Wire Line
+	7625 1225 7775 1225
+Wire Wire Line
+	7775 1325 7625 1325
+Connection ~ 7625 1325
+Wire Wire Line
+	7625 1325 7625 1225
+Wire Wire Line
+	7325 1225 7325 1275
+Wire Wire Line
+	7325 1225 7625 1225
+Connection ~ 7625 1225
+Wire Wire Line
+	7775 1675 7475 1675
+Wire Wire Line
+	7325 1475 7325 1675
+Wire Wire Line
+	7325 1675 7325 1775
+Connection ~ 7325 1675
+$Comp
+L power:GND #PWR0119
+U 1 1 5BCBAF43
+P 7325 1775
+F 0 "#PWR0119" H 7325 1525 50  0001 C CNN
+F 1 "GND" H 7330 1602 50  0000 C CNN
+F 2 "" H 7325 1775 50  0001 C CNN
+F 3 "" H 7325 1775 50  0001 C CNN
+	1    7325 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C68
+U 1 1 5BCBAFCE
+P 7575 1825
+F 0 "C68" V 7625 1875 50  0000 L CNN
+F 1 "1uF/25V X7R" V 7475 1725 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7575 1825 50  0001 C CNN
+F 3 "~" H 7575 1825 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    7575 1825
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7675 1825 7775 1825
+Wire Wire Line
+	7475 1825 7475 1675
+Connection ~ 7475 1675
+Wire Wire Line
+	7475 1675 7325 1675
+Wire Wire Line
+	6925 1225 7325 1225
+Connection ~ 7325 1225
+Wire Wire Line
+	7775 2375 7625 2375
+Wire Wire Line
+	7625 2375 7625 2175
+Wire Wire Line
+	7625 2075 7775 2075
+Wire Wire Line
+	7775 2175 7625 2175
+Connection ~ 7625 2175
+Wire Wire Line
+	7625 2175 7625 2075
+Wire Wire Line
+	7325 2075 7325 2125
+Wire Wire Line
+	7325 2075 7625 2075
+Connection ~ 7625 2075
+Wire Wire Line
+	7775 2525 7475 2525
+Wire Wire Line
+	7325 2325 7325 2525
+Wire Wire Line
+	7325 2525 7325 2625
+Connection ~ 7325 2525
+$Comp
+L power:GND #PWR0129
+U 1 1 5BCBBB87
+P 7325 2625
+F 0 "#PWR0129" H 7325 2375 50  0001 C CNN
+F 1 "GND" H 7330 2452 50  0000 C CNN
+F 2 "" H 7325 2625 50  0001 C CNN
+F 3 "" H 7325 2625 50  0001 C CNN
+	1    7325 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 2675 7775 2675
+Wire Wire Line
+	7475 2675 7475 2525
+Connection ~ 7475 2525
+Wire Wire Line
+	7475 2525 7325 2525
+Wire Wire Line
+	6925 2075 7325 2075
+Connection ~ 7325 2075
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5BCBD0AD
+P 10150 1225
+F 0 "TP19" H 10250 1425 50  0000 R CNN
+F 1 "TestPoint" H 10525 1275 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10350 1225 50  0001 C CNN
+F 3 "~" H 10350 1225 50  0001 C CNN
+	1    10150 1225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5BCBD0C1
+P 9700 1525
+F 0 "#PWR0105" H 9700 1275 50  0001 C CNN
+F 1 "GND" H 9705 1352 50  0000 C CNN
+F 2 "" H 9700 1525 50  0001 C CNN
+F 3 "" H 9700 1525 50  0001 C CNN
+	1    9700 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 1325 8875 1325
+Wire Wire Line
+	8875 1325 8875 1225
+Wire Wire Line
+	8825 1225 8875 1225
+Wire Wire Line
+	8875 1225 9075 1225
+$Comp
+L Device:R R35
+U 1 1 5BCBD0CD
+P 9075 1375
+F 0 "R35" H 9145 1421 50  0000 L CNN
+F 1 "33k2" H 9145 1330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9005 1375 50  0001 C CNN
+F 3 "~" H 9075 1375 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "CRCW080533K2FKEB" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.114" H 0   0   50  0001 C CNN "Unit price"
+	1    9075 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5BCBD0D6
+P 9075 1725
+F 0 "R36" H 9145 1771 50  0000 L CNN
+F 1 "10k7" H 9145 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9005 1725 50  0001 C CNN
+F 3 "~" H 9075 1725 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-10.7K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.087" H 0   0   50  0001 C CNN "Unit price"
+	1    9075 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9075 1575 9075 1525
+Wire Wire Line
+	8825 1525 9075 1525
+Connection ~ 9075 1525
+Wire Wire Line
+	9700 1525 9700 1425
+$Comp
+L power:GND #PWR0120
+U 1 1 5BCBF410
+P 9075 1925
+F 0 "#PWR0120" H 9075 1675 50  0001 C CNN
+F 1 "GND" H 9175 1875 50  0000 C CNN
+F 2 "" H 9075 1925 50  0001 C CNN
+F 3 "" H 9075 1925 50  0001 C CNN
+	1    9075 1925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9075 1925 9075 1875
+Wire Wire Line
+	9075 2075 9425 2075
+Connection ~ 9075 2075
+Wire Wire Line
+	10150 1225 10250 1225
+Connection ~ 10150 2075
+Wire Wire Line
+	10150 2075 10250 2075
+$Comp
+L power:+1V8 #PWR0122
+U 1 1 5BCC3A00
+P 10650 2075
+F 0 "#PWR0122" H 10650 1925 50  0001 C CNN
+F 1 "+1V8" H 10665 2248 50  0000 C CNN
+F 2 "" H 10650 2075 50  0001 C CNN
+F 3 "" H 10650 2075 50  0001 C CNN
+	1    10650 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5BCC3B25
+P 10650 1225
+F 0 "#PWR0103" H 10650 1075 50  0001 C CNN
+F 1 "+3.3V" H 10665 1398 50  0000 C CNN
+F 2 "" H 10650 1225 50  0001 C CNN
+F 3 "" H 10650 1225 50  0001 C CNN
+	1    10650 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BCC3F27
+P 6925 1225
+F 0 "#PWR0102" H 6925 1075 50  0001 C CNN
+F 1 "+5V" H 6940 1398 50  0000 C CNN
+F 2 "" H 6925 1225 50  0001 C CNN
+F 3 "" H 6925 1225 50  0001 C CNN
+	1    6925 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 3075 8575 3025
+Wire Wire Line
+	8075 3075 8075 3025
+$Comp
+L Device:R R41
+U 1 1 5BCD7C39
+P 3000 4250
+F 0 "R41" H 3075 4325 50  0000 L CNN
+F 1 "32k4" H 3075 4250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 4250 50  0001 C CNN
+F 3 "~" H 3000 4250 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080532K4FKEB" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.087" H 0   0   50  0001 C CNN "Unit price"
+	1    3000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 5BCD7CD9
+P 1500 4800
+F 0 "#PWR0137" H 1500 4550 50  0001 C CNN
+F 1 "GND" H 1505 4627 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12VA #PWR0123
+U 1 1 5BCD7DF8
+P 1500 3775
+F 0 "#PWR0123" H 1500 3625 50  0001 C CNN
+F 1 "+12VA" H 1515 3948 50  0000 C CNN
+F 2 "" H 1500 3775 50  0001 C CNN
+F 3 "" H 1500 3775 50  0001 C CNN
+	1    1500 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4500 1600 4500
+Wire Wire Line
+	1600 4500 1600 4300
+Wire Wire Line
+	1600 4300 1750 4300
+Wire Wire Line
+	1600 4300 1500 4300
+Connection ~ 1600 4300
+$Comp
+L Device:C_Small C75
+U 1 1 5BCDE483
+P 1500 4625
+F 0 "C75" H 1750 4625 50  0000 R CNN
+F 1 "22uF/25V X7R" H 1925 4725 35  0000 R CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 1500 4625 50  0001 C CNN
+F 3 "~" H 1500 4625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "810-C5750X5R1E226M2A" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.15" H 0   0   50  0001 C CNN "Unit price"
+	1    1500 4625
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1500 4725 1500 4800
+Wire Wire Line
+	1500 4525 1500 4300
+Connection ~ 1500 4300
+$Comp
+L power:GND #PWR0138
+U 1 1 5BCE519E
+P 2150 4800
+F 0 "#PWR0138" H 2150 4550 50  0001 C CNN
+F 1 "GND" H 2155 4627 50  0000 C CNN
+F 2 "" H 2150 4800 50  0001 C CNN
+F 3 "" H 2150 4800 50  0001 C CNN
+	1    2150 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4800 2150 4700
+$Comp
+L Device:C_Small C72
+U 1 1 5BCE8A85
+P 2750 4250
+F 0 "C72" H 2725 4175 50  0000 R CNN
+F 1 "10nF/25V X7R" H 2850 4050 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 4250 50  0001 C CNN
+F 3 "~" H 2750 4250 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    2750 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5BCE8C7A
+P 2750 4600
+F 0 "R43" H 2820 4646 50  0000 L CNN
+F 1 "10k" H 2820 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 4600 50  0001 C CNN
+F 3 "~" H 2750 4600 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080510K0FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    2750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5BCE8F25
+P 2750 4800
+F 0 "#PWR0140" H 2750 4550 50  0001 C CNN
+F 1 "GND" H 2755 4627 50  0000 C CNN
+F 2 "" H 2750 4800 50  0001 C CNN
+F 3 "" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4400 2750 4400
+Wire Wire Line
+	2750 4450 2750 4400
+Connection ~ 2750 4400
+Wire Wire Line
+	2550 4300 2550 4100
+Wire Wire Line
+	2550 4100 2750 4100
+Wire Wire Line
+	3325 4100 3325 4225
+Wire Wire Line
+	2750 4400 3000 4400
+Wire Wire Line
+	2750 4350 2750 4400
+Wire Wire Line
+	2750 4150 2750 4100
+Connection ~ 2750 4100
+Wire Wire Line
+	2750 4100 3000 4100
+Connection ~ 3000 4100
+Wire Wire Line
+	3000 4100 3325 4100
+$Comp
+L power:GND #PWR0130
+U 1 1 5BD0D0A2
+P 3325 4500
+F 0 "#PWR0130" H 3325 4250 50  0001 C CNN
+F 1 "GND" H 3330 4327 50  0000 C CNN
+F 2 "" H 3325 4500 50  0001 C CNN
+F 3 "" H 3325 4500 50  0001 C CNN
+	1    3325 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 4500 3325 4425
+Wire Wire Line
+	2750 4750 2750 4800
+Connection ~ 3325 4100
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5BCD7D2E
+P 3325 4100
+F 0 "TP21" H 3275 4300 50  0000 L CNN
+F 1 "TestPoint" H 3375 4225 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3525 4100 50  0001 C CNN
+F 3 "~" H 3525 4100 50  0001 C CNN
+	1    3325 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VAA #PWR0128
+U 1 1 5BD5BB9C
+P 3900 4100
+F 0 "#PWR0128" H 3900 3950 50  0001 C CNN
+F 1 "VAA" V 3917 4228 50  0000 L CNN
+F 2 "" H 3900 4100 50  0001 C CNN
+F 3 "" H 3900 4100 50  0001 C CNN
+	1    3900 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3775 1500 3850
+$Comp
+L Device:R R48
+U 1 1 5BD69A77
+P 3000 5750
+F 0 "R48" H 3070 5796 50  0000 L CNN
+F 1 "32k4" H 3070 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 5750 50  0001 C CNN
+F 3 "~" H 3000 5750 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080532K4FKEB" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.087" H 0   0   50  0001 C CNN "Unit price"
+	1    3000 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5BD69A7E
+P 1500 6300
+F 0 "#PWR0154" H 1500 6050 50  0001 C CNN
+F 1 "GND" H 1505 6127 50  0000 C CNN
+F 2 "" H 1500 6300 50  0001 C CNN
+F 3 "" H 1500 6300 50  0001 C CNN
+	1    1500 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6000 1600 6000
+Wire Wire Line
+	1600 6000 1600 5800
+Wire Wire Line
+	1600 5800 1750 5800
+Wire Wire Line
+	1600 5800 1500 5800
+Connection ~ 1600 5800
+Wire Wire Line
+	1500 6225 1500 6300
+Wire Wire Line
+	1500 6025 1500 5800
+Connection ~ 1500 5800
+$Comp
+L power:GND #PWR0155
+U 1 1 5BD69A99
+P 2150 6300
+F 0 "#PWR0155" H 2150 6050 50  0001 C CNN
+F 1 "GND" H 2155 6127 50  0000 C CNN
+F 2 "" H 2150 6300 50  0001 C CNN
+F 3 "" H 2150 6300 50  0001 C CNN
+	1    2150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6300 2150 6200
+$Comp
+L Device:R R51
+U 1 1 5BD69AA7
+P 2750 6100
+F 0 "R51" H 2820 6146 50  0000 L CNN
+F 1 "10k" H 2820 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 6100 50  0001 C CNN
+F 3 "~" H 2750 6100 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080510K0FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    2750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5BD69AAE
+P 2750 6300
+F 0 "#PWR0157" H 2750 6050 50  0001 C CNN
+F 1 "GND" H 2755 6127 50  0000 C CNN
+F 2 "" H 2750 6300 50  0001 C CNN
+F 3 "" H 2750 6300 50  0001 C CNN
+	1    2750 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5900 2750 5900
+Wire Wire Line
+	2750 5950 2750 5900
+Connection ~ 2750 5900
+Wire Wire Line
+	2550 5800 2550 5600
+Wire Wire Line
+	2550 5600 2750 5600
+Wire Wire Line
+	3325 5600 3325 5775
+Wire Wire Line
+	2750 5900 3000 5900
+Wire Wire Line
+	2750 5850 2750 5900
+Wire Wire Line
+	2750 5650 2750 5600
+Connection ~ 2750 5600
+Wire Wire Line
+	2750 5600 3000 5600
+Connection ~ 3000 5600
+Wire Wire Line
+	3000 5600 3325 5600
+$Comp
+L power:GND #PWR0149
+U 1 1 5BD69AC8
+P 3325 6000
+F 0 "#PWR0149" H 3325 5750 50  0001 C CNN
+F 1 "GND" H 3330 5827 50  0000 C CNN
+F 2 "" H 3325 6000 50  0001 C CNN
+F 3 "" H 3325 6000 50  0001 C CNN
+	1    3325 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 6000 3325 5975
+Wire Wire Line
+	2750 6250 2750 6300
+Connection ~ 3325 5600
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5BD69AD2
+P 3325 5600
+F 0 "TP23" H 3275 5800 50  0000 L CNN
+F 1 "TestPoint" H 3375 5725 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3525 5600 50  0001 C CNN
+F 3 "~" H 3525 5600 50  0001 C CNN
+	1    3325 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 5BD703DB
+P 2550 6300
+F 0 "#PWR0156" H 2550 6050 50  0001 C CNN
+F 1 "GND" H 2555 6127 50  0000 C CNN
+F 2 "" H 2550 6300 50  0001 C CNN
+F 3 "" H 2550 6300 50  0001 C CNN
+	1    2550 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6250 2550 6300
+Wire Wire Line
+	2550 6000 2550 6050
+Wire Wire Line
+	2550 4550 2550 4500
+Wire Wire Line
+	2550 4750 2550 4800
+$Comp
+L power:GND #PWR0139
+U 1 1 5BD8AD5B
+P 2550 4800
+F 0 "#PWR0139" H 2550 4550 50  0001 C CNN
+F 1 "GND" H 2555 4627 50  0000 C CNN
+F 2 "" H 2550 4800 50  0001 C CNN
+F 3 "" H 2550 4800 50  0001 C CNN
+	1    2550 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1350 1575 1350
+Wire Wire Line
+	1575 1350 1575 1550
+Wire Wire Line
+	1500 1550 1575 1550
+Connection ~ 1575 1550
+Wire Wire Line
+	1575 1550 1575 1750
+Wire Wire Line
+	1500 1750 1575 1750
+Connection ~ 1575 1750
+Wire Wire Line
+	1575 1750 1575 1925
+$Comp
+L Connector:Conn_01x06_Male J9
+U 1 1 5BDA0B37
+P 1300 1450
+F 0 "J9" H 1350 1775 50  0000 C CNN
+F 1 "Conn_01x06_Male" V 1250 1400 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 1300 1450 50  0001 C CNN
+F 3 "~" H 1300 1450 50  0001 C CNN
+F 4 "Digikey" H 0   0   50  0001 C CNN "Distributor"
+F 5 " 455-1708-ND " H 0   0   50  0001 C CNN "Order code"
+F 6 "0.29" H 0   0   50  0001 C CNN "Unit price"
+	1    1300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5BDC7E91
+P 2975 2100
+F 0 "#PWR0112" H 2975 1850 50  0001 C CNN
+F 1 "GND" H 2975 1975 50  0000 C CNN
+F 2 "" H 2975 2100 50  0001 C CNN
+F 3 "" H 2975 2100 50  0001 C CNN
+	1    2975 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5BDC7F0A
+P 2675 2100
+F 0 "#PWR0113" H 2675 1850 50  0001 C CNN
+F 1 "GND" H 2675 1975 50  0000 C CNN
+F 2 "" H 2675 2100 50  0001 C CNN
+F 3 "" H 2675 2100 50  0001 C CNN
+	1    2675 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5BDC7F83
+P 2825 2100
+F 0 "#PWR0114" H 2825 1850 50  0001 C CNN
+F 1 "GND" H 2825 1975 50  0000 C CNN
+F 2 "" H 2825 2100 50  0001 C CNN
+F 3 "" H 2825 2100 50  0001 C CNN
+	1    2825 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 2100 2825 2000
+Wire Wire Line
+	2825 1800 2825 1450
+Wire Wire Line
+	2825 1450 3050 1450
+Wire Wire Line
+	2675 1800 2675 1250
+Wire Wire Line
+	2675 1250 3050 1250
+Connection ~ 2675 1250
+Connection ~ 2825 1450
+Wire Wire Line
+	2975 1800 2975 1650
+Connection ~ 2975 1650
+Wire Wire Line
+	2975 1650 3050 1650
+Wire Wire Line
+	2975 2000 2975 2100
+Wire Wire Line
+	2675 2000 2675 2100
+$Comp
+L power:+5V #PWR0100
+U 1 1 5BE6A2FD
+P 4675 1650
+F 0 "#PWR0100" H 4675 1500 50  0001 C CNN
+F 1 "+5V" V 4690 1778 50  0000 L CNN
+F 2 "" H 4675 1650 50  0001 C CNN
+F 3 "" H 4675 1650 50  0001 C CNN
+	1    4675 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1650 3875 1650
+Wire Wire Line
+	3350 1450 3725 1450
+$Comp
+L power:GND #PWR0115
+U 1 1 5BEF2BD6
+P 3875 2075
+F 0 "#PWR0115" H 3875 1825 50  0001 C CNN
+F 1 "GND" H 3875 1950 50  0000 C CNN
+F 2 "" H 3875 2075 50  0001 C CNN
+F 3 "" H 3875 2075 50  0001 C CNN
+	1    3875 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BEF2BDC
+P 3575 2075
+F 0 "#PWR0116" H 3575 1825 50  0001 C CNN
+F 1 "GND" H 3575 1950 50  0000 C CNN
+F 2 "" H 3575 2075 50  0001 C CNN
+F 3 "" H 3575 2075 50  0001 C CNN
+	1    3575 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5BEF2BE2
+P 3725 2075
+F 0 "#PWR0117" H 3725 1825 50  0001 C CNN
+F 1 "GND" H 3725 1950 50  0000 C CNN
+F 2 "" H 3725 2075 50  0001 C CNN
+F 3 "" H 3725 2075 50  0001 C CNN
+	1    3725 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 2075 3725 2025
+Wire Wire Line
+	3875 2025 3875 2075
+Wire Wire Line
+	3575 2025 3575 2075
+Wire Wire Line
+	3875 1825 3875 1650
+Connection ~ 3875 1650
+Connection ~ 3575 1250
+Wire Wire Line
+	3575 1250 3350 1250
+Wire Wire Line
+	3725 1825 3725 1450
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5BF24090
+P 3575 1225
+F 0 "TP17" H 3625 1350 50  0000 L CNN
+F 1 "TestPoint" H 3625 1275 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3775 1225 50  0001 C CNN
+F 3 "~" H 3775 1225 50  0001 C CNN
+	1    3575 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5BF24116
+P 3725 1450
+F 0 "TP18" H 3775 1575 50  0000 L CNN
+F 1 "TestPoint" H 3775 1500 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3925 1450 50  0001 C CNN
+F 3 "~" H 3925 1450 50  0001 C CNN
+	1    3725 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 1225 3575 1250
+Wire Wire Line
+	1925 1650 2375 1650
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 5BF7882A
+P 1825 1250
+F 0 "F2" V 1775 1075 50  0000 C CNN
+F 1 "200mA" V 1750 1250 30  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1875 1050 50  0001 L CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_nanosmd_catalog_datasheet.pdf.pdf" H 1825 1250 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "650-NANOSMDC020F-2" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.367" H 0   0   50  0001 C CNN "Unit price"
+	1    1825 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1925 1250 2075 1250
+$Comp
+L Device:Polyfuse_Small F3
+U 1 1 5BF788BA
+P 1825 1450
+F 0 "F3" V 1775 1275 50  0000 C CNN
+F 1 "200mA" V 1750 1450 30  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1875 1250 50  0001 L CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_nanosmd_catalog_datasheet.pdf.pdf" H 1825 1450 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "650-NANOSMDC020F-2" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.367" H 0   0   50  0001 C CNN "Unit price"
+	1    1825 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1925 1450 2225 1450
+$Comp
+L power:VEE #PWR0146
+U 1 1 5BF79521
+P 3850 5600
+F 0 "#PWR0146" H 3850 5450 50  0001 C CNN
+F 1 "VEE" V 3867 5728 50  0000 L CNN
+F 2 "" H 3850 5600 50  0001 C CNN
+F 3 "" H 3850 5600 50  0001 C CNN
+	1    3850 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5BFA54CA
+P 5675 1275
+F 0 "R33" H 5745 1321 50  0000 L CNN
+F 1 "2K2" H 5745 1230 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5605 1275 50  0001 C CNN
+F 3 "~" H 5675 1275 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW08052K20FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    5675 1275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5BFC5FF6
+P 5675 1875
+F 0 "#PWR0107" H 5675 1625 50  0001 C CNN
+F 1 "GND" H 5680 1702 50  0000 C CNN
+F 2 "" H 5675 1875 50  0001 C CNN
+F 3 "" H 5675 1875 50  0001 C CNN
+	1    5675 1875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 1725 5675 1875
+Wire Wire Line
+	5675 1525 5675 1425
+Wire Wire Line
+	5675 1125 5675 1025
+$Comp
+L power:+5V #PWR099
+U 1 1 5BFE71EE
+P 5675 1025
+F 0 "#PWR099" H 5675 875 50  0001 C CNN
+F 1 "+5V" H 5690 1198 50  0000 C CNN
+F 2 "" H 5675 1025 50  0001 C CNN
+F 3 "" H 5675 1025 50  0001 C CNN
+	1    5675 1025
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	1100 3550 4275 3550
+Wire Notes Line
+	4275 6525 1100 6525
+Wire Notes Line
+	1100 3550 1100 6525
+Wire Notes Line
+	4275 5025 1100 5025
+Wire Notes Line
+	4275 3550 4275 6525
+Wire Notes Line
+	11050 6425 6550 6425
+Wire Notes Line
+	6550 625  11050 625 
+Wire Notes Line
+	6550 625  6550 6425
+Wire Notes Line
+	6550 3350 11050 3350
+Wire Notes Line
+	11050 625  11050 6425
+Wire Wire Line
+	3325 4100 3425 4100
+Wire Wire Line
+	3325 5600 3425 5600
+Text Notes 1850 3750 0    50   ~ 0
+INPUT  AMPLIFIER POSITIVE SUPPLY +2..12V
+Text Notes 1725 5250 0    50   ~ 0
+INPUT  AMPLIFIER NEGATIVE SUPPLY -2..12V
+Text Notes 8425 3500 0    80   ~ 0
+ADC's SUPPLY
+Text Notes 7950 825  0    80   ~ 0
+CPLD SUPPLY
+Text Notes 5800 1650 0    50   ~ 0
+POWER LED\n(RED)
+Text Notes 1275 1025 0    50   ~ 0
+POWER SUPPLY INPUT\n+/- 12Vdc , +5Vdc
+$Comp
+L Device:R R40
+U 1 1 5BD898EF
+P 3575 4100
+F 0 "R40" V 3650 4025 50  0000 L CNN
+F 1 "NP" V 3575 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3505 4100 50  0001 C CNN
+F 3 "~" H 3575 4100 50  0001 C CNN
+	1    3575 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3725 4100 3775 4100
+$Comp
+L Device:R R46
+U 1 1 5BD89D75
+P 3575 5600
+F 0 "R46" V 3650 5525 50  0000 L CNN
+F 1 "NP" V 3575 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3505 5600 50  0001 C CNN
+F 3 "~" H 3575 5600 50  0001 C CNN
+	1    3575 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3725 5600 3775 5600
+$Comp
+L power:-12VA #PWR0143
+U 1 1 5BD966A8
+P 1500 5225
+F 0 "#PWR0143" H 1500 5075 50  0001 C CNN
+F 1 "-12VA" H 1475 5375 50  0000 C CNN
+F 2 "" H 1500 5225 50  0001 C CNN
+F 3 "" H 1500 5225 50  0001 C CNN
+	1    1500 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5BDC52AA
+P 2175 3850
+F 0 "R38" V 2250 3775 50  0000 L CNN
+F 1 "NP" V 2175 3800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2105 3850 50  0001 C CNN
+F 3 "~" H 2175 3850 50  0001 C CNN
+	1    2175 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2025 3850 1500 3850
+Connection ~ 1500 3850
+Wire Wire Line
+	1500 3850 1500 4300
+Wire Wire Line
+	2550 3850 2550 4100
+Connection ~ 2550 4100
+Wire Wire Line
+	2325 3850 2550 3850
+$Comp
+L Device:R R44
+U 1 1 5BE00157
+P 2175 5350
+F 0 "R44" V 2250 5275 50  0000 L CNN
+F 1 "NP" V 2175 5300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2105 5350 50  0001 C CNN
+F 3 "~" H 2175 5350 50  0001 C CNN
+	1    2175 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2025 5350 1500 5350
+Wire Wire Line
+	2550 5350 2550 5600
+Wire Wire Line
+	2325 5350 2550 5350
+Connection ~ 1500 5350
+Wire Wire Line
+	1500 5350 1500 5800
+Wire Wire Line
+	1500 5225 1500 5350
+$Comp
+L power:GND #PWR0109
+U 1 1 5BD99E6F
+P 2225 2100
+F 0 "#PWR0109" H 2225 1850 50  0001 C CNN
+F 1 "GND" H 2225 1975 50  0000 C CNN
+F 2 "" H 2225 2100 50  0001 C CNN
+F 3 "" H 2225 2100 50  0001 C CNN
+	1    2225 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5BD99F00
+P 2075 2100
+F 0 "#PWR0110" H 2075 1850 50  0001 C CNN
+F 1 "GND" H 2075 1975 50  0000 C CNN
+F 2 "" H 2075 2100 50  0001 C CNN
+F 3 "" H 2075 2100 50  0001 C CNN
+	1    2075 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 2050 2075 2100
+Wire Wire Line
+	2225 2050 2225 2100
+Wire Wire Line
+	2225 1750 2225 1450
+Connection ~ 2225 1450
+Wire Wire Line
+	2225 1450 2825 1450
+Wire Wire Line
+	2075 1750 2075 1250
+Connection ~ 2075 1250
+Wire Wire Line
+	2075 1250 2675 1250
+Wire Wire Line
+	2375 1750 2375 1650
+Connection ~ 2375 1650
+Wire Wire Line
+	2375 1650 2975 1650
+$Comp
+L power:GND #PWR0111
+U 1 1 5BE375AF
+P 2375 2100
+F 0 "#PWR0111" H 2375 1850 50  0001 C CNN
+F 1 "GND" H 2375 1975 50  0000 C CNN
+F 2 "" H 2375 2100 50  0001 C CNN
+F 3 "" H 2375 2100 50  0001 C CNN
+	1    2375 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2375 2050 2375 2100
+$Comp
+L Device:R R34
+U 1 1 5BE0C419
+P 10400 1225
+F 0 "R34" V 10300 1150 50  0000 L CNN
+F 1 "NP" V 10400 1175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10330 1225 50  0001 C CNN
+F 3 "~" H 10400 1225 50  0001 C CNN
+	1    10400 1225
+	0    1    1    0   
+$EndComp
+Connection ~ 10150 1225
+Wire Wire Line
+	10550 1225 10600 1225
+$Comp
+L Device:R R37
+U 1 1 5BE79DD4
+P 10400 2075
+F 0 "R37" V 10300 2000 50  0000 L CNN
+F 1 "NP" V 10400 2025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10330 2075 50  0001 C CNN
+F 3 "~" H 10400 2075 50  0001 C CNN
+	1    10400 2075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 2075 10600 2075
+$Comp
+L Device:C_Small C79
+U 1 1 5BDA60C1
+P 2750 5750
+F 0 "C79" H 2725 5675 50  0000 R CNN
+F 1 "10nF/25V X7R" H 2850 5550 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 5750 50  0001 C CNN
+F 3 "~" H 2750 5750 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    2750 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C61
+U 1 1 5BDA61E1
+P 9425 1375
+F 0 "C61" H 9400 1300 50  0000 R CNN
+F 1 "10nF/25V X7R" H 9625 1175 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9425 1375 50  0001 C CNN
+F 3 "~" H 9425 1375 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    9425 1375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9425 1525 9425 1475
+Wire Wire Line
+	9425 1225 9425 1275
+Connection ~ 9425 1225
+Wire Wire Line
+	9075 1525 9425 1525
+Connection ~ 9075 1225
+Wire Wire Line
+	9075 1225 9425 1225
+$Comp
+L Device:C_Small C71
+U 1 1 5BDED1B6
+P 9425 2225
+F 0 "C71" H 9400 2150 50  0000 R CNN
+F 1 "10nF/25V X7R" H 9625 2025 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9425 2225 50  0001 C CNN
+F 3 "~" H 9425 2225 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    9425 2225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9425 2375 9425 2325
+Wire Wire Line
+	9425 2075 9425 2125
+Connection ~ 9425 2075
+Wire Wire Line
+	9075 2375 9425 2375
+$Comp
+L Device:C_Small C74
+U 1 1 5BE1BE6E
+P 7575 2675
+F 0 "C74" V 7625 2725 50  0000 L CNN
+F 1 "1uF/25V X7R" V 7475 2575 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7575 2675 50  0001 C CNN
+F 3 "~" H 7575 2675 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    7575 2675
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C70
+U 1 1 5BE1CC9E
+P 7325 2225
+F 0 "C70" H 7417 2271 50  0000 L CNN
+F 1 "22uF/16V X7R" H 7375 2125 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7325 2225 50  0001 C CNN
+F 3 "~" H 7325 2225 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    7325 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C60
+U 1 1 5BE1CDC4
+P 7325 1375
+F 0 "C60" H 7417 1421 50  0000 L CNN
+F 1 "22uF/16V X7R" H 7375 1275 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7325 1375 50  0001 C CNN
+F 3 "~" H 7325 1375 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    7325 1375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9425 1225 9700 1225
+Wire Wire Line
+	9425 2075 9700 2075
+$Comp
+L Device:C_Small C59
+U 1 1 5BE1CFE5
+P 9700 1325
+F 0 "C59" H 9800 1275 50  0000 L CNN
+F 1 "22uF/16V X7R" H 9725 1200 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9700 1325 50  0001 C CNN
+F 3 "~" H 9700 1325 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    9700 1325
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 1225
+Wire Wire Line
+	9700 1225 10150 1225
+$Comp
+L Device:C_Small C69
+U 1 1 5BE1D3F9
+P 9700 2175
+F 0 "C69" H 9750 2050 50  0000 L CNN
+F 1 "22uF/16V X7R" H 9725 1975 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9700 2175 50  0001 C CNN
+F 3 "~" H 9700 2175 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    9700 2175
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 2075
+Wire Wire Line
+	9700 2075 10150 2075
+$Comp
+L Device:C_Small C82
+U 1 1 5BE40F22
+P 2550 6150
+F 0 "C82" H 2825 6175 50  0000 R CNN
+F 1 "10nF/25V X7R" H 2950 6275 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 6150 50  0001 C CNN
+F 3 "~" H 2550 6150 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    2550 6150
+	-1   0    0    1   
+$EndComp
+Connection ~ 2550 5600
+$Comp
+L Device:C_Small C81
+U 1 1 5BE30B0B
+P 1500 6125
+F 0 "C81" H 1750 6125 50  0000 R CNN
+F 1 "22uF/25V X7R" H 1925 6225 35  0000 R CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 1500 6125 50  0001 C CNN
+F 3 "~" H 1500 6125 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "810-C5750X5R1E226M2A" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.15" H 0   0   50  0001 C CNN "Unit price"
+	1    1500 6125
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C76
+U 1 1 5BE613ED
+P 2550 4650
+F 0 "C76" H 2775 4675 50  0000 R CNN
+F 1 "10nF/25V X7R" H 2950 4775 35  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 4650 50  0001 C CNN
+F 3 "~" H 2550 4650 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012206065" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.04" H 0   0   50  0001 C CNN "Unit price"
+	1    2550 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C80
+U 1 1 5BE61507
+P 3325 5875
+F 0 "C80" H 3575 5875 50  0000 R CNN
+F 1 "22uF/25V X7R" H 3750 5975 35  0000 R CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 3325 5875 50  0001 C CNN
+F 3 "~" H 3325 5875 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "810-C5750X5R1E226M2A" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.15" H 0   0   50  0001 C CNN "Unit price"
+	1    3325 5875
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C73
+U 1 1 5BE61631
+P 3325 4325
+F 0 "C73" H 3575 4325 50  0000 R CNN
+F 1 "22uF/25V X7R" H 3750 4425 35  0000 R CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 3325 4325 50  0001 C CNN
+F 3 "~" H 3325 4325 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "810-C5750X5R1E226M2A" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.15" H 0   0   50  0001 C CNN "Unit price"
+	1    3325 4325
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C62
+U 1 1 5BDBFE61
+P 2975 1900
+F 0 "C62" H 2825 1975 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3025 1675 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2975 1900 50  0001 C CNN
+F 3 "~" H 2975 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    2975 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C63
+U 1 1 5BE62C7B
+P 2675 1900
+F 0 "C63" H 2525 1975 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3025 1825 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2675 1900 50  0001 C CNN
+F 3 "~" H 2675 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    2675 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C64
+U 1 1 5BE62D33
+P 2825 1900
+F 0 "C64" H 2675 1975 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3025 1750 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2825 1900 50  0001 C CNN
+F 3 "~" H 2825 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    2825 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C65
+U 1 1 5BE72639
+P 3875 1925
+F 0 "C65" H 3725 2000 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3950 1900 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3875 1925 50  0001 C CNN
+F 3 "~" H 3875 1925 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    3875 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C66
+U 1 1 5BE72640
+P 3575 1925
+F 0 "C66" H 3425 2000 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3950 1825 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3575 1925 50  0001 C CNN
+F 3 "~" H 3575 1925 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    3575 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C67
+U 1 1 5BE72647
+P 3725 1925
+F 0 "C67" H 3575 2000 50  0000 L CNN
+F 1 "1uF/25V X7R" H 3950 1750 35  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3725 1925 50  0001 C CNN
+F 3 "~" H 3725 1925 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012106022" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.08" H 0   0   50  0001 C CNN "Unit price"
+	1    3725 1925
+	1    0    0    -1  
+$EndComp
+Text Notes 2875 6375 0    50   ~ 0
+Tstart(ms)= 1.4 x Cnr(nF)
+Text Notes 2875 6475 0    50   ~ 0
+R_upper = 10K x ((Vout/1.18) -1 )
+$Comp
+L Diode:BAT54C D7
+U 1 1 5BEC4A27
+P 10150 1625
+F 0 "D7" V 10050 1400 50  0000 L CNN
+F 1 "BAT54C" V 10250 1275 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10225 1750 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 10070 1625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "863-BAT54CLT1G" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.122" H 0   0   50  0001 C CNN "Unit price"
+	1    10150 1625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10150 1325 10150 1225
+Wire Wire Line
+	10150 1925 10150 2075
+$Comp
+L power:+5V #PWR0108
+U 1 1 5BF10DE1
+P 10450 1625
+F 0 "#PWR0108" H 10450 1475 50  0001 C CNN
+F 1 "+5V" V 10450 1825 50  0000 C CNN
+F 2 "" H 10450 1625 50  0001 C CNN
+F 3 "" H 10450 1625 50  0001 C CNN
+	1    10450 1625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10350 1625 10450 1625
+$Comp
+L power:+5V #PWR0121
+U 1 1 5BF32636
+P 6925 2075
+F 0 "#PWR0121" H 6925 1925 50  0001 C CNN
+F 1 "+5V" H 6940 2248 50  0000 C CNN
+F 2 "" H 6925 2075 50  0001 C CNN
+F 3 "" H 6925 2075 50  0001 C CNN
+	1    6925 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:Chock FB5
+U 1 1 5BDB1843
+P 3200 1650
+F 0 "FB5" H 3350 1700 50  0000 C CNN
+F 1 "600/100M" H 3200 1775 30  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3225 1580 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/7427920415.pdf" V 3200 1650 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-7427920415" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.19" H 0   0   50  0001 C CNN "Unit price"
+	1    3200 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8825 1825
+NoConn ~ 8825 2675
+Text Notes 3600 3450 2    80   ~ 16
+FRONT-END ANALOG SUPPLY
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C31C7DA
+P 5675 2850
+AR Path="/5C31C7DA" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C31C7DA" Ref="H3"  Part="1" 
+F 0 "H3" H 5775 2901 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5125 3175 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5675 2850 50  0001 C CNN
+F 3 "~" H 5675 2850 50  0001 C CNN
+	1    5675 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C33C490
+P 5675 3375
+AR Path="/5C33C490" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C33C490" Ref="H6"  Part="1" 
+F 0 "H6" H 5775 3426 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5125 3025 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5675 3375 50  0001 C CNN
+F 3 "~" H 5675 3375 50  0001 C CNN
+	1    5675 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C34C32D
+P 5475 2850
+AR Path="/5C34C32D" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C34C32D" Ref="H2"  Part="1" 
+F 0 "H2" H 5575 2901 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5150 3025 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5475 2850 50  0001 C CNN
+F 3 "~" H 5475 2850 50  0001 C CNN
+	1    5475 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5C34C334
+P 5475 3000
+F 0 "#PWR0126" H 5475 2750 50  0001 C CNN
+F 1 "GND" H 5475 2875 50  0000 C CNN
+F 2 "" H 5475 3000 50  0001 C CNN
+F 3 "" H 5475 3000 50  0001 C CNN
+	1    5475 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 2950 5475 3000
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C34C33B
+P 5475 3375
+AR Path="/5C34C33B" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C34C33B" Ref="H5"  Part="1" 
+F 0 "H5" H 5575 3426 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5150 3550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5475 3375 50  0001 C CNN
+F 3 "~" H 5475 3375 50  0001 C CNN
+	1    5475 3375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5C34C342
+P 5475 3525
+F 0 "#PWR0133" H 5475 3275 50  0001 C CNN
+F 1 "GND" H 5475 3400 50  0000 C CNN
+F 2 "" H 5475 3525 50  0001 C CNN
+F 3 "" H 5475 3525 50  0001 C CNN
+	1    5475 3525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 3475 5475 3525
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5C69D72B
+P 4175 1450
+F 0 "#FLG04" H 4175 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4325 1525 30  0000 C CNN
+F 2 "" H 4175 1450 50  0001 C CNN
+F 3 "~" H 4175 1450 50  0001 C CNN
+	1    4175 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4175 1450
+Wire Wire Line
+	4175 1450 4675 1450
+Wire Wire Line
+	3575 1250 4175 1250
+Wire Wire Line
+	3875 1650 4175 1650
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C69DAD4
+P 4175 1250
+F 0 "#FLG02" H 4175 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4325 1325 30  0000 C CNN
+F 2 "" H 4175 1250 50  0001 C CNN
+F 3 "~" H 4175 1250 50  0001 C CNN
+	1    4175 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4175 1250
+Wire Wire Line
+	4175 1250 4675 1250
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C69DB83
+P 4175 1650
+F 0 "#FLG01" H 4175 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 4325 1725 30  0000 C CNN
+F 2 "" H 4175 1650 50  0001 C CNN
+F 3 "~" H 4175 1650 50  0001 C CNN
+	1    4175 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4175 1650
+Wire Wire Line
+	4175 1650 4675 1650
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5C77D157
+P 3775 4100
+F 0 "#FLG07" H 3775 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3825 4225 30  0000 C CNN
+F 2 "" H 3775 4100 50  0001 C CNN
+F 3 "~" H 3775 4100 50  0001 C CNN
+	1    3775 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3775 4100
+Wire Wire Line
+	3775 4100 3900 4100
+$Comp
+L power:PWR_FLAG #FLG08
+U 1 1 5C77D595
+P 3775 5600
+F 0 "#FLG08" H 3775 5675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3825 5725 30  0000 C CNN
+F 2 "" H 3775 5600 50  0001 C CNN
+F 3 "~" H 3775 5600 50  0001 C CNN
+	1    3775 5600
+	1    0    0    1   
+$EndComp
+Connection ~ 3775 5600
+Wire Wire Line
+	3775 5600 3850 5600
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5C7AFEDF
+P 10600 2075
+F 0 "#FLG06" H 10600 2150 50  0001 C CNN
+F 1 "PWR_FLAG" H 10650 2200 30  0000 C CNN
+F 2 "" H 10600 2075 50  0001 C CNN
+F 3 "~" H 10600 2075 50  0001 C CNN
+	1    10600 2075
+	1    0    0    1   
+$EndComp
+Connection ~ 10600 2075
+Wire Wire Line
+	10600 2075 10650 2075
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5C7B021C
+P 10600 1225
+F 0 "#FLG03" H 10600 1300 50  0001 C CNN
+F 1 "PWR_FLAG" H 10650 1350 30  0000 C CNN
+F 2 "" H 10600 1225 50  0001 C CNN
+F 3 "~" H 10600 1225 50  0001 C CNN
+	1    10600 1225
+	1    0    0    1   
+$EndComp
+Connection ~ 10600 1225
+Wire Wire Line
+	10600 1225 10650 1225
+$Comp
+L power:GND #PWR0118
+U 1 1 5BE679B3
+P 4600 2000
+F 0 "#PWR0118" H 4600 1750 50  0001 C CNN
+F 1 "GND" H 4600 1875 50  0000 C CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 5BE67A60
+P 4600 1925
+F 0 "#FLG05" H 4600 2000 50  0001 C CNN
+F 1 "PWR_FLAG" H 4750 2000 30  0000 C CNN
+F 2 "" H 4600 1925 50  0001 C CNN
+F 3 "~" H 4600 1925 50  0001 C CNN
+	1    4600 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1925 4600 2000
+$Comp
+L Connector:Conn_01x04_Female J10
+U 1 1 5BEB579C
+P 4200 4975
+F 0 "J10" H 4100 5175 50  0000 L CNN
+F 1 "Conn_01x04_Female" V 4350 4625 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4200 4975 50  0001 C CNN
+F 3 "~" H 4200 4975 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "855-M20-7820446" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.681" H 0   0   50  0001 C CNN "Unit price"
+	1    4200 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4875 3775 4875
+Wire Wire Line
+	3775 4875 3775 4100
+Wire Wire Line
+	3775 5175 3775 5600
+Wire Wire Line
+	3775 5175 4000 5175
+$Comp
+L power:GND #PWR0141
+U 1 1 5BFAA523
+P 3950 4975
+F 0 "#PWR0141" H 3950 4725 50  0001 C CNN
+F 1 "GND" H 3950 4875 50  0000 C CNN
+F 2 "" H 3950 4975 50  0001 C CNN
+F 3 "" H 3950 4975 50  0001 C CNN
+	1    3950 4975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5BFAA624
+P 3950 5075
+F 0 "#PWR0142" H 3950 4825 50  0001 C CNN
+F 1 "GND" H 3950 4975 50  0000 C CNN
+F 2 "" H 3950 5075 50  0001 C CNN
+F 3 "" H 3950 5075 50  0001 C CNN
+	1    3950 5075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 4975 3950 4975
+Wire Wire Line
+	3925 5075 3950 5075
+Connection ~ 3950 5075
+Wire Wire Line
+	3950 5075 4000 5075
+$Comp
+L AA2380:P4SMA16A D4
+U 1 1 5BED66A1
+P 2225 1900
+F 0 "D4" V 2350 1900 50  0000 R CNN
+F 1 "P4SMA16A" V 2150 2500 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA" H 2225 1700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88367/p4sma.pdf" H 2175 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "576-P4SMA16A" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.489" H 0   0   50  0001 C CNN "Unit price"
+	1    2225 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L AA2380:P4SMA16A D5
+U 1 1 5BED6D73
+P 2075 1900
+F 0 "D5" V 2200 1900 50  0000 R CNN
+F 1 "P4SMA16A" V 2075 2350 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA" H 2075 1700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88367/p4sma.pdf" H 2025 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "576-P4SMA16A" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.489" H 0   0   50  0001 C CNN "Unit price"
+	1    2075 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L AA2380:P4SMA6.8A D6
+U 1 1 5BED6FBC
+P 2375 1900
+F 0 "D6" V 2500 1900 50  0000 L CNN
+F 1 "P4SMA6.8A" V 2450 1125 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 2375 1700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88367/p4sma.pdf" H 2325 1900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "576-P4SMA6.8A" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.489" H 0   0   50  0001 C CNN "Unit price"
+	1    2375 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L AA2380:TPS7A8701RT U13
+U 1 1 5C1C67A1
+P 8325 1975
+F 0 "U13" H 8300 2990 50  0000 C CNN
+F 1 "TPS7A8701RT" H 8300 2899 50  0000 C CNN
+F 2 "AA2380V1:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalViasx9_0.3mm" H 9775 1075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps7a87.pdf" H 7925 1625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "595-TPS7A8701RTJR" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.03" H 0   0   50  0001 C CNN "Unit price"
+	1    8325 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:TPS7A3001DG U16
+U 1 1 5C1C8962
+P 2150 5900
+F 0 "U16" H 2150 6242 50  0000 C CNN
+F 1 "TPS7A3001DG" H 2150 6151 50  0000 C CNN
+F 2 "AA2380V1:MSOP-8-1EP_3x3mm_P0.65mm_EP2.54x2.8mm_ThermalViasx5_0.3mm" H 2150 6225 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps7a3001-ep.pdf" H 2150 5800 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "595-TPS7A3001DGNR" H 0   0   50  0001 C CNN "Order code"
+F 6 "3.06" H 0   0   50  0001 C CNN "Unit price"
+	1    2150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:TPS7A4901DGN U14
+U 1 1 5BE60F36
+P 2150 4400
+F 0 "U14" H 2150 4742 50  0000 C CNN
+F 1 "TPS7A4901DGN" H 2150 4651 50  0000 C CNN
+F 2 "AA2380V1:MSOP-8-1EP_3x3mm_P0.65mm_EP2.54x2.8mm_ThermalViasx5_0.3mm" H 2150 4725 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 2150 4300 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "595-TPS7A4901DGNR" H 0   0   50  0001 C CNN "Order code"
+F 6 "2.49" H 0   0   50  0001 C CNN "Unit price"
+	1    2150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:Chock FB6
+U 1 1 5BE69FA5
+P 3200 1250
+F 0 "FB6" H 3350 1300 50  0000 C CNN
+F 1 "600/100M" H 3200 1375 30  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3225 1180 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/7427920415.pdf" V 3200 1250 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-7427920415" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.19" H 0   0   50  0001 C CNN "Unit price"
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:Chock FB7
+U 1 1 5BE6A067
+P 3200 1450
+F 0 "FB7" H 3350 1500 50  0000 C CNN
+F 1 "600/100M" H 3200 1575 30  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3225 1380 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pbs/datasheet/7427920415.pdf" V 3200 1450 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-7427920415" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.19" H 0   0   50  0001 C CNN "Unit price"
+	1    3200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C01C400
+P 5250 2850
+AR Path="/5C01C400" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C01C400" Ref="H1"  Part="1" 
+F 0 "H1" H 5350 2901 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4700 3100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5250 2850 50  0001 C CNN
+F 3 "~" H 5250 2850 50  0001 C CNN
+	1    5250 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5C01C407
+P 5250 3000
+F 0 "#PWR0125" H 5250 2750 50  0001 C CNN
+F 1 "GND" H 5250 2875 50  0000 C CNN
+F 2 "" H 5250 3000 50  0001 C CNN
+F 3 "" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2950 5250 3000
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5C01C40E
+P 5250 3375
+AR Path="/5C01C40E" Ref="H?"  Part="1" 
+AR Path="/5BA9080A/5C01C40E" Ref="H4"  Part="1" 
+F 0 "H4" H 5350 3426 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4700 2950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5250 3375 50  0001 C CNN
+F 3 "~" H 5250 3375 50  0001 C CNN
+	1    5250 3375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5C01C415
+P 5250 3525
+F 0 "#PWR0132" H 5250 3275 50  0001 C CNN
+F 1 "GND" H 5250 3400 50  0000 C CNN
+F 2 "" H 5250 3525 50  0001 C CNN
+F 3 "" H 5250 3525 50  0001 C CNN
+	1    5250 3525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3475 5250 3525
+$Comp
+L AA2380:LT3042IMSE U15
+U 1 1 5C26D1FC
+P 8700 3900
+F 0 "U15" H 8625 3950 50  0000 C CNN
+F 1 "LT3042IMSE" H 8700 4151 50  0000 C CNN
+F 2 "AA2380V1:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mmThermalviax4_0.3mm" H 8700 4225 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf" H 8675 3800 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "584-LT3042IMSE#PBF" H 0   0   50  0001 C CNN "Order code"
+F 6 "4.82" H 0   0   50  0001 C CNN "Unit price"
+	1    8700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 4000 8275 3900
+Wire Wire Line
+	8275 3800 8025 3800
+Connection ~ 8275 3800
+Connection ~ 8275 3900
+Wire Wire Line
+	8275 3900 8275 3800
+$Comp
+L Device:R R52
+U 1 1 5C2BA3F4
+P 8475 4600
+F 0 "R52" H 8550 4550 50  0000 L CNN
+F 1 "33.2k" H 8525 4475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8405 4600 50  0001 C CNN
+F 3 "~" H 8475 4600 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-33.2K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.114" H 0   0   50  0001 C CNN "Unit price"
+	1    8475 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5C2E1D57
+P 8850 4400
+F 0 "#PWR0151" H 8850 4150 50  0001 C CNN
+F 1 "GND" H 8850 4275 30  0000 C CNN
+F 2 "" H 8850 4400 50  0001 C CNN
+F 3 "" H 8850 4400 50  0001 C CNN
+	1    8850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 4450 8625 4400
+$Comp
+L Device:R R50
+U 1 1 5C315F01
+P 8250 4400
+F 0 "R50" V 8150 4325 50  0000 L CNN
+F 1 "2.55k" V 8325 4300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 4400 50  0001 C CNN
+F 3 "~" H 8250 4400 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-2.55K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.105" H 0   0   50  0001 C CNN "Unit price"
+	1    8250 4400
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5C3160AD
+P 8075 4400
+F 0 "#PWR0150" H 8075 4150 50  0001 C CNN
+F 1 "GND" H 8075 4275 30  0000 C CNN
+F 2 "" H 8075 4400 50  0001 C CNN
+F 3 "" H 8075 4400 50  0001 C CNN
+	1    8075 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8075 4400 8100 4400
+Wire Wire Line
+	8775 4400 8850 4400
+$Comp
+L Device:C_Small C77
+U 1 1 5C3D09DF
+P 8025 3900
+F 0 "C77" H 8117 3946 50  0000 L CNN
+F 1 "22uF/16V X7R" H 8075 3800 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8025 3900 50  0001 C CNN
+F 3 "~" H 8025 3900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    8025 3900
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8025 3800
+Wire Wire Line
+	8025 3825 8025 3800
+$Comp
+L power:GND #PWR0148
+U 1 1 5C406DFE
+P 8025 4050
+F 0 "#PWR0148" H 8025 3800 50  0001 C CNN
+F 1 "GND" H 8025 3925 30  0000 C CNN
+F 2 "" H 8025 4050 50  0001 C CNN
+F 3 "" H 8025 4050 50  0001 C CNN
+	1    8025 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 4000 8025 4050
+$Comp
+L Device:R R47
+U 1 1 5C4770C3
+P 9400 4100
+F 0 "R47" H 9475 4125 50  0000 L CNN
+F 1 "93.1k" H 9450 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 4100 50  0001 C CNN
+F 3 "~" H 9400 4100 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-93.1K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.105" H 0   0   50  0001 C CNN "Unit price"
+	1    9400 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R49
+U 1 1 5C4771F7
+P 9400 4450
+F 0 "R49" H 9470 4496 50  0000 L CNN
+F 1 "10k" H 9470 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 4450 50  0001 C CNN
+F 3 "~" H 9400 4450 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080510K0FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    9400 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5C4772F7
+P 9400 4625
+F 0 "#PWR0153" H 9400 4375 50  0001 C CNN
+F 1 "GND" H 9400 4500 30  0000 C CNN
+F 2 "" H 9400 4625 50  0001 C CNN
+F 3 "" H 9400 4625 50  0001 C CNN
+	1    9400 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 4250 9400 4250
+Wire Wire Line
+	9400 4250 9400 4300
+Connection ~ 9400 4250
+Wire Wire Line
+	9400 4600 9400 4625
+Text Notes 6700 4625 0    50   ~ 0
+I_limit=125/R_ILIM=50mA
+Text Notes 6700 4700 0    50   ~ 0
+Vout= RSET.100e-6=3.32V
+Connection ~ 8850 4400
+Wire Wire Line
+	8850 4400 8925 4400
+Text Notes 6700 4775 0    50   ~ 0
+PGFB=0,3.(1+Rh/Rl)
+Text Notes 9125 4300 0    30   ~ 0
+0.3V@3.1V
+$Comp
+L Device:C_Small C83
+U 1 1 5C59AA0F
+P 8625 4625
+F 0 "C83" H 8725 4625 50  0000 L CNN
+F 1 "22uF/6v3" H 8675 4525 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8625 4625 50  0001 C CNN
+F 3 "~" H 8625 4625 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012108003" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.655" H 0   0   50  0001 C CNN "Unit price"
+	1    8625 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4400 8475 4400
+Wire Wire Line
+	8475 4450 8625 4450
+Wire Wire Line
+	8625 4525 8625 4450
+Connection ~ 8625 4450
+Wire Wire Line
+	8475 4750 8475 4775
+Wire Wire Line
+	8625 4725 8625 4775
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5C72AAEA
+P 9525 3800
+F 0 "TP22" H 9450 3925 50  0000 R CNN
+F 1 "TestPoint" H 9900 3850 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9725 3800 50  0001 C CNN
+F 3 "~" H 9725 3800 50  0001 C CNN
+	1    9525 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR0145
+U 1 1 5C74381F
+P 10750 3800
+F 0 "#PWR0145" H 10750 3650 50  0001 C CNN
+F 1 "+3.3VA" H 10765 3973 50  0000 C CNN
+F 2 "" H 10750 3800 50  0001 C CNN
+F 3 "" H 10750 3800 50  0001 C CNN
+	1    10750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 5C743825
+P 10300 3800
+F 0 "R45" V 10200 3725 50  0000 L CNN
+F 1 "NP" V 10300 3750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10230 3800 50  0001 C CNN
+F 3 "~" H 10300 3800 50  0001 C CNN
+	1    10300 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 3800 10075 3800
+$Comp
+L power:+5V #PWR0144
+U 1 1 5C79DC1C
+P 8025 3800
+F 0 "#PWR0144" H 8025 3650 50  0001 C CNN
+F 1 "+5V" H 8025 3950 50  0000 C CNN
+F 2 "" H 8025 3800 50  0001 C CNN
+F 3 "" H 8025 3800 50  0001 C CNN
+	1    8025 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA2380:LT3042IMSE U17
+U 1 1 5C79FBA6
+P 8700 5375
+F 0 "U17" H 8625 5425 50  0000 C CNN
+F 1 "LT3042IMSE" H 8700 5626 50  0000 C CNN
+F 2 "AA2380V1:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mmThermalviax4_0.3mm" H 8700 5700 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf" H 8675 5275 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "584-LT3042IMSE#PBF" H 0   0   50  0001 C CNN "Order code"
+F 6 "4.82" H 0   0   50  0001 C CNN "Unit price"
+	1    8700 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 5475 8275 5375
+Wire Wire Line
+	8275 5275 8025 5275
+Connection ~ 8275 5275
+Connection ~ 8275 5375
+Wire Wire Line
+	8275 5375 8275 5275
+$Comp
+L Device:R R57
+U 1 1 5C79FBB2
+P 8475 6075
+F 0 "R57" H 8550 6025 50  0000 L CNN
+F 1 "24.9k" H 8525 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8405 6075 50  0001 C CNN
+F 3 "~" H 8475 6075 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-24.9K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.114" H 0   0   50  0001 C CNN "Unit price"
+	1    8475 6075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0165
+U 1 1 5C79FBB9
+P 8850 5875
+F 0 "#PWR0165" H 8850 5625 50  0001 C CNN
+F 1 "GND" H 8850 5750 30  0000 C CNN
+F 2 "" H 8850 5875 50  0001 C CNN
+F 3 "" H 8850 5875 50  0001 C CNN
+	1    8850 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 5925 8625 5875
+$Comp
+L Device:R R56
+U 1 1 5C79FBC6
+P 8250 5875
+F 0 "R56" V 8150 5800 50  0000 L CNN
+F 1 "2.55k" V 8325 5775 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 5875 50  0001 C CNN
+F 3 "~" H 8250 5875 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-2.55K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.105" H 0   0   50  0001 C CNN "Unit price"
+	1    8250 5875
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5C79FBCD
+P 8075 5875
+F 0 "#PWR0164" H 8075 5625 50  0001 C CNN
+F 1 "GND" H 8075 5750 30  0000 C CNN
+F 2 "" H 8075 5875 50  0001 C CNN
+F 3 "" H 8075 5875 50  0001 C CNN
+	1    8075 5875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8075 5875 8100 5875
+Wire Wire Line
+	8775 5875 8850 5875
+$Comp
+L Device:C_Small C84
+U 1 1 5C79FBDF
+P 8025 5375
+F 0 "C84" H 8117 5421 50  0000 L CNN
+F 1 "22uF/16V X7R" H 8075 5275 35  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8025 5375 50  0001 C CNN
+F 3 "~" H 8025 5375 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    8025 5375
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8025 5275
+Wire Wire Line
+	8025 5175 8025 5275
+$Comp
+L power:GND #PWR0163
+U 1 1 5C79FBE8
+P 8025 5525
+F 0 "#PWR0163" H 8025 5275 50  0001 C CNN
+F 1 "GND" H 8025 5400 30  0000 C CNN
+F 2 "" H 8025 5525 50  0001 C CNN
+F 3 "" H 8025 5525 50  0001 C CNN
+	1    8025 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 5475 8025 5525
+Wire Wire Line
+	9825 5275 9500 5275
+$Comp
+L Device:R R54
+U 1 1 5C79FBF8
+P 9400 5550
+F 0 "R54" H 9475 5550 50  0000 L CNN
+F 1 "68.1k" H 9450 5475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5550 50  0001 C CNN
+F 3 "~" H 9400 5550 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW0805-68.1K-E3" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.114" H 0   0   50  0001 C CNN "Unit price"
+	1    9400 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R55
+U 1 1 5C79FC01
+P 9400 5900
+F 0 "R55" H 9470 5946 50  0000 L CNN
+F 1 "10k" H 9470 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5900 50  0001 C CNN
+F 3 "~" H 9400 5900 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "71-CRCW080510K0FKEAC" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.166" H 0   0   50  0001 C CNN "Unit price"
+	1    9400 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5C79FC08
+P 9400 6075
+F 0 "#PWR0166" H 9400 5825 50  0001 C CNN
+F 1 "GND" H 9400 5950 30  0000 C CNN
+F 2 "" H 9400 6075 50  0001 C CNN
+F 3 "" H 9400 6075 50  0001 C CNN
+	1    9400 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9125 5700 9400 5700
+Wire Wire Line
+	9400 5700 9400 5750
+Connection ~ 9400 5700
+Wire Wire Line
+	9400 6050 9400 6075
+Text Notes 6700 5925 0    50   ~ 0
+I_limit=125/R_ILIM=50mA
+Text Notes 6700 6000 0    50   ~ 0
+Vout= RSET.100e-6=2.49V
+Connection ~ 8850 5875
+Wire Wire Line
+	8850 5875 8925 5875
+Text Notes 6700 6075 0    50   ~ 0
+PGFB=0,3.(1+Rh/Rl)
+Text Notes 9100 5750 0    30   ~ 0
+0.3V@2.34V
+$Comp
+L Device:C_Small C86
+U 1 1 5C79FC18
+P 8625 6100
+F 0 "C86" H 8725 6100 50  0000 L CNN
+F 1 "22uF/6v3" H 8675 6000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8625 6100 50  0001 C CNN
+F 3 "~" H 8625 6100 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "710-885012108003" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.655" H 0   0   50  0001 C CNN "Unit price"
+	1    8625 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5875 8475 5875
+Wire Wire Line
+	8475 5925 8625 5925
+Wire Wire Line
+	8625 6000 8625 5925
+Connection ~ 8625 5925
+Wire Wire Line
+	8475 6225 8475 6250
+Wire Wire Line
+	8625 6200 8625 6250
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5C79FC2B
+P 9500 5275
+F 0 "TP24" H 9600 5475 50  0000 R CNN
+F 1 "TestPoint" H 9875 5325 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9700 5275 50  0001 C CNN
+F 3 "~" H 9700 5275 50  0001 C CNN
+	1    9500 5275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 5C79FC38
+P 10300 5275
+F 0 "R53" V 10200 5200 50  0000 L CNN
+F 1 "NP" V 10300 5225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10230 5275 50  0001 C CNN
+F 3 "~" H 10300 5275 50  0001 C CNN
+	1    10300 5275
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0160
+U 1 1 5C79FC49
+P 8025 5175
+F 0 "#PWR0160" H 8025 5025 50  0001 C CNN
+F 1 "+5V" H 8040 5348 50  0000 C CNN
+F 2 "" H 8025 5175 50  0001 C CNN
+F 3 "" H 8025 5175 50  0001 C CNN
+	1    8025 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V5 #PWR0161
+U 1 1 5C84A372
+P 10750 5275
+F 0 "#PWR0161" H 10750 5125 50  0001 C CNN
+F 1 "+2V5" H 10765 5448 50  0000 C CNN
+F 2 "" H 10750 5275 50  0001 C CNN
+F 3 "" H 10750 5275 50  0001 C CNN
+	1    10750 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10075 4000 10075 3800
+$Comp
+L power:+5V #PWR0152
+U 1 1 5C8B9C91
+P 10300 4525
+F 0 "#PWR0152" H 10300 4375 50  0001 C CNN
+F 1 "+5V" H 10300 4675 50  0000 C CNN
+F 2 "" H 10300 4525 50  0001 C CNN
+F 3 "" H 10300 4525 50  0001 C CNN
+	1    10300 4525
+	0    1    1    0   
+$EndComp
+NoConn ~ 8275 4100
+NoConn ~ 8275 5575
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C2AB9E6
+P 10700 3800
+F 0 "#FLG0101" H 10700 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10750 3925 30  0000 C CNN
+F 2 "" H 10700 3800 50  0001 C CNN
+F 3 "~" H 10700 3800 50  0001 C CNN
+	1    10700 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C2ABBA6
+P 10700 5275
+F 0 "#FLG0102" H 10700 5350 50  0001 C CNN
+F 1 "PWR_FLAG" H 10750 5400 30  0000 C CNN
+F 2 "" H 10700 5275 50  0001 C CNN
+F 3 "~" H 10700 5275 50  0001 C CNN
+	1    10700 5275
+	1    0    0    1   
+$EndComp
+Connection ~ 10700 3800
+Wire Wire Line
+	10700 3800 10750 3800
+Connection ~ 10700 5275
+Wire Wire Line
+	10700 5275 10750 5275
+Connection ~ 8875 1225
+$Comp
+L power:GND #PWR0290
+U 1 1 5C25A49C
+P 8325 3075
+F 0 "#PWR0290" H 8325 2825 50  0001 C CNN
+F 1 "GND" H 8330 2902 50  0000 C CNN
+F 2 "" H 8325 3075 50  0001 C CNN
+F 3 "" H 8325 3075 50  0001 C CNN
+	1    8325 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 3075 8325 3025
+$Comp
+L power:GND #PWR0291
+U 1 1 5C26D882
+P 2000 6300
+F 0 "#PWR0291" H 2000 6050 50  0001 C CNN
+F 1 "GND" H 2005 6127 50  0000 C CNN
+F 2 "" H 2000 6300 50  0001 C CNN
+F 3 "" H 2000 6300 50  0001 C CNN
+	1    2000 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6300 2000 6200
+$Comp
+L power:GND #PWR0292
+U 1 1 5C27F65C
+P 2000 4800
+F 0 "#PWR0292" H 2000 4550 50  0001 C CNN
+F 1 "GND" H 2005 4627 50  0000 C CNN
+F 2 "" H 2000 4800 50  0001 C CNN
+F 3 "" H 2000 4800 50  0001 C CNN
+	1    2000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4800 2000 4700
+NoConn ~ 5675 2950
+NoConn ~ 5675 3475
+$Comp
+L AA2380:C_4W C78
+U 1 1 5C279E03
+P 9850 4050
+F 0 "C78" H 9900 4150 50  0000 L CNN
+F 1 "22uF/16V X7R" H 9500 4250 30  0000 L CNN
+F 2 "AA2380V1:C_1206_3216Metric_4-PADS" H 9888 3900 50  0001 C CNN
+F 3 "~" H 9850 4050 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    9850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5275 10700 5275
+$Comp
+L power:GND #PWR059
+U 1 1 5C2E740E
+P 9850 4350
+F 0 "#PWR059" H 9850 4100 50  0001 C CNN
+F 1 "GND" H 9850 4225 30  0000 C CNN
+F 2 "" H 9850 4350 50  0001 C CNN
+F 3 "" H 9850 4350 50  0001 C CNN
+	1    9850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 4350 9850 4250
+Connection ~ 10075 3800
+Connection ~ 9525 3800
+Wire Wire Line
+	9850 3850 9850 3800
+Wire Wire Line
+	9525 3800 9850 3800
+Connection ~ 9850 3800
+Wire Wire Line
+	9850 3800 10075 3800
+$Comp
+L AA2380:C_4W C85
+U 1 1 5C334919
+P 9825 5525
+F 0 "C85" H 9850 5625 50  0000 L CNN
+F 1 "22uF/16V X7R" H 9875 5425 30  0000 L CNN
+F 2 "AA2380V1:C_1206_3216Metric_4-PADS" H 9863 5375 50  0001 C CNN
+F 3 "~" H 9825 5525 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "81-GRM31CC71C226ME1L" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.978" H 0   0   50  0001 C CNN "Unit price"
+	1    9825 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5C334920
+P 9825 5825
+F 0 "#PWR0127" H 9825 5575 50  0001 C CNN
+F 1 "GND" H 9825 5700 30  0000 C CNN
+F 2 "" H 9825 5825 50  0001 C CNN
+F 3 "" H 9825 5825 50  0001 C CNN
+	1    9825 5825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9825 5825 9825 5725
+Wire Wire Line
+	9825 5325 9825 5275
+Connection ~ 9500 5275
+Wire Wire Line
+	9825 5275 10075 5275
+Connection ~ 9825 5275
+Wire Wire Line
+	10075 5025 10075 5275
+Connection ~ 10075 5275
+Wire Wire Line
+	10075 5275 10150 5275
+Wire Wire Line
+	10450 3800 10700 3800
+Wire Wire Line
+	9125 3800 9400 3800
+Wire Wire Line
+	9125 4100 9125 4250
+Wire Wire Line
+	9125 3900 9650 3900
+Wire Wire Line
+	9650 3900 9650 3950
+Wire Wire Line
+	9400 3950 9400 3800
+Connection ~ 9400 3800
+Wire Wire Line
+	9400 3800 9525 3800
+Wire Wire Line
+	8475 4775 8625 4775
+Wire Wire Line
+	8625 4775 9650 4775
+Wire Wire Line
+	9650 4775 9650 4150
+Connection ~ 8625 4775
+Wire Wire Line
+	9125 5275 9400 5275
+Wire Wire Line
+	9125 5375 9625 5375
+Wire Wire Line
+	9625 5375 9625 5425
+Wire Wire Line
+	8475 6250 8625 6250
+Wire Wire Line
+	9625 6250 9625 5625
+Connection ~ 8625 6250
+Wire Wire Line
+	8625 6250 9625 6250
+Wire Wire Line
+	9125 5700 9125 5575
+Wire Wire Line
+	9400 5400 9400 5275
+Connection ~ 9400 5275
+Wire Wire Line
+	9400 5275 9500 5275
+$Comp
+L Diode:BAV99 D8
+U 1 1 5C3B906C
+P 10075 4150
+F 0 "D8" V 10121 4062 50  0000 R CNN
+F 1 "BAV99" V 10030 4062 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10075 4000 50  0001 C CNN
+F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 10075 4250 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "863-BAV99LT1G" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.122" H 0   0   50  0001 C CNN "Unit price"
+	1    10075 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10075 4525 10075 4300
+Wire Wire Line
+	10075 4525 10300 4525
+$Comp
+L Diode:BAV99 D?
+U 1 1 5C3B8EC0
+P 10075 4875
+AR Path="/5BA9080A/5C3B906C" Ref="D?"  Part="1" 
+AR Path="/5BA9080A/5C3B8EC0" Ref="D35"  Part="1" 
+F 0 "D35" V 10029 4953 50  0000 L CNN
+F 1 "BAV99" V 10120 4953 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10075 4725 50  0001 C CNN
+F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 10075 4975 50  0001 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Distributor"
+F 5 "863-BAV99LT1G" H 0   0   50  0001 C CNN "Order code"
+F 6 "0.122" H 0   0   50  0001 C CNN "Unit price"
+	1    10075 4875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10075 4725 10075 4525
+Connection ~ 10075 4525
+Wire Wire Line
+	1500 1650 1725 1650
+Wire Wire Line
+	3575 1250 3575 1825
+Wire Wire Line
+	1500 1450 1725 1450
+Wire Wire Line
+	1500 1250 1725 1250
+Connection ~ 3725 1450
+Wire Wire Line
+	3725 1450 4175 1450
+Text Notes 925  1775 0    60   Italic 0
++12V\nGND\n-12V\nGND\n+5V\nGND
+$EndSCHEMATC
