@@ -1,17 +1,18 @@
-# OSVA
-**Open source versatible analyzer (24bits 1.536MSPS 2 Channels)**
+# OSVA 
+## Open source versatile analyzer (2 Channels 24 bits 1536 kSPS)
 
 The OSVA project is a 2 channels signal analyzer using high resolution SAR ADC (LTC2380-24).
 It has been designed to be used as system analyser but using standard digital audio interface.
 
 The OSVA project include 4 sub-design (boards):
+-----------------------------------------------
+1. AA2380  - 2 channels ADC board : It is the main board.
+2. AA10M08 - CPLD digital board : Optional board
+3. AAPSU01 - Low noise SMSP board
+4. AACMD01 - Command panel board
 
-    1_ AA2380  - 2 channels ADC board : It is the main board.
-    2_ AA10M08 - CPLD digital board : Optional board
-    3_ AAPSU01 - Low noise SMSP board
-    4_ AACMD01 - Command panel board
-
-The AA2380 main specifications are :
+ The AA2380 main specifications are :
+ ------------------------------------
 * 2 ADC Channels using LTC2380-24 (or compatible device)
 * 24 bits resolution up to 1536 ksps
 * 10Vpp full-scale signal sensitivity (default)
