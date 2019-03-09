@@ -1,5 +1,6 @@
 # OSVA
-Open source versatible analyzer (24bits 1.536MSPS 2 Channels)
+Open source versatible analyzer (24bits 1.536MSPS 2 Channels).
+
 The OSVA project is a 2 channels signal analyzer using high resolution SAR ADC (LTC2380-24).
 It has been designed to be used as system analyser but using standard digital audio interface.
 
